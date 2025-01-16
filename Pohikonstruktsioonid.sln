@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Pohikonstruktsioonid", "Pohikonstruktsioonid\Pohikonstruktsioonid.pyproj", "{FD73C371-F95F-42FF-88DB-860609406FFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD73C371-F95F-42FF-88DB-860609406FFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD73C371-F95F-42FF-88DB-860609406FFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE269575-3055-4741-A6B3-3273979EC79E}
+	EndGlobalSection
+EndGlobal
