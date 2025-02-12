@@ -12,7 +12,7 @@ arv = randint(-10, 10)
 if arv > 0:
     print(f"+")
 else:
-    print("-")
+    print("-") #viga null ei ole positiivne
 
 if arv > 0:
     print("+")
