@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>e570bdad-a79d-456c-9350-c5bbe236cd41</ProjectGuid>
+    <ProjectGuid>c074852e-b9f1-4a2a-a3e5-b494ac4d9e3b</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>while.py</StartupFile>
+    <StartupFile>for.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>while</Name>
-    <RootNamespace>while</RootNamespace>
+    <Name>for</Name>
+    <RootNamespace>for</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,9 +21,8 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="class1.py" />
-    <Compile Include="module1.py" />
-    <Compile Include="while.py" />
+    <Compile Include="for.py" />
+    <Compile Include="vigadeotsing.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
