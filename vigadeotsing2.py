@@ -1,57 +1,61 @@
-print("*** ИГРЫ С ЧИСЛАМИ ***")
+print("*** MÄNG NUMBRITEGA ***")  
 print()
 
-# Ввод числа с проверкой на корректность
+
 while True:
     try:
-        a = abs(int(input("Введите целое число => ")))
+        a = abs(int(input("Sisestage täisarv => ")))  
         break
     except ValueError:
-        print("Это не целое число")
+        print("See ei ole täisarv") 
 
 if a == 0:
-    print("Нет смысла ничего делать с нулём")
+    print("Nulliga pole mõtet midagi teha")  
 else:
-    # Подсчёт чётных и нечётных цифр
-    print("Определяем, сколько в числе чётных и сколько нечётных цифр")
+    print("Määrame, kui palju on paaris ja paarituid numbreid")
     print()
-    c = b = a
-    paaris = 0
+
+    c = b = a  
+    paaris = 0  
     paaritu = 0
+
     while b > 0:
-        digit = b % 10  # Получаем последнюю цифру числа
-        if digit % 2 == 0:  # Проверяем, чётная ли цифра
+        if b % 2 == 0: 
             paaris += 1
         else:
             paaritu += 1
-        b = b // 10  # Убираем последнюю цифру числа
+        b = b // 10 
 
-    print(f"Чётных цифр: {paaris}")
-    print(f"Нечётных цифр: {paaritu}")
+    print("Paaris numbrid:", paaris)
+    print("Paaritud numbrid:", paaritu)
     print()
 
-    # Переворачиваем число
-    print("*Переворачиваем* введённое число", c)
+    print("*Pöörame* sisestatud numbri")
     print()
-    b = 0
+
+    b = 0  
     while a > 0:
-        number = a % 10  # Получаем последнюю цифру числа
-        a = a // 10  # Убираем последнюю цифру числа
-        b = b * 10  # Сдвигаем разряды перевёрнутого числа
-        b += number  # Добавляем цифру к перевёрнутому числу
-    print("*Перевёрнутое* число", b)
+        number = a % 10  
+        a = a // 10 
+        b = b * 10 + number  
+
+    print("*Pööratud* number", b)
     print()
 
-    # Проверка гипотезы Сиракуз
-    print("Проверяем гипотезу Сиракуз")
+    print("Kontrollime Syracuse'i hüpoteesi") 
     print()
-    c = b  # Используем перевёрнутое число для проверки гипотезы
-    while c != 1:  # Продолжаем, пока не достигнем 1
+
+    if c % 2 == 0:
+        print("c - paarisarv. Jagame kahega.")
+    else:
+        print("c - paaritu arv. Korrutame 3-ga, lisame 1 ja jagame kahega.")
+
+    while c != 1:
         if c % 2 == 0:
-            print(f"{c} - чётное число. Делим на 2.")
-            c = c // 2
+            c = c // 2  
         else:
-            print(f"{c} - нечётное число. Умножаем на 3, прибавляем 1 и делим на 2.")
-            c = (3 * c + 1) // 2
-        print(f"Текущее значение: {c}")
-    print("Гипотеза верна: мы достигли 1.")
+            c = (3 * c + 1) // 2 
+        print(c, end=" ")
+
+    print()
+    print("Hüpotees on õige!")
